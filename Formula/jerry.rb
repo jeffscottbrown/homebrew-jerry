@@ -1,8 +1,8 @@
 class Jerry < Formula
     desc "Jerry programming language compiler"
     homepage "https://github.com/jeffscottbrown/jerry-lang"
-    url "https://github.com/jeffscottbrown/jerry-lang/archive/refs/tags/v0.1.9.tar.gz"
-    sha256 "5da82558cebf41a13bbc4e1243527057d906e4c7c56a5491fa60ee74bc494792"
+    url "https://github.com/jeffscottbrown/jerry-lang/archive/refs/tags/v0.1.10.tar.gz"
+    sha256 "d18a4fde03f2d32f796d96c6fa9d60ffd2f3282dd3cb33d96b1693baa0f73e6d"
     license "MIT"
     head "https://github.com/jeffscottbrown/jerry-lang.git", branch: "main"
 
