@@ -12,6 +12,13 @@ class Jerry < Formula
       system "go", "build",
         *std_go_args(ldflags: "-s -w -X main.Version=#{version}"),
         "./cmd/jerry"
+
+      # Pre-compile the C runtime to a static archive.
+      # The jerry binary discovers it at <prefix>/lib/jerry_runtime.a and uses
+      # it directly, avoiding the go:embed extraction on every compilation.
+      system ENV.cc, "-O2", "-c", "runtime/src/runtime.c",
+             "-Iruntime/src", "-o", "jerry_runtime.o"
+      system "ar", "rcs", lib/"jerry_runtime.a", "jerry_runtime.o"
     end
 
     test do
