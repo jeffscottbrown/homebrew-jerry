@@ -10,7 +10,7 @@ class Jerry < Formula
 
     def install
       system "go", "build",
-        *std_go_args(ldflags: "-s -w -X main.Version=\#{version}"),
+        *std_go_args(ldflags: "-s -w -X main.Version=#{version}"),
         "./cmd/jerry"
 
       # Pre-compile the C runtime to a static archive.
@@ -28,6 +28,6 @@ class Jerry < Formula
           print("Hello from Homebrew!");
         }
       EOS
-      assert_match "Hello from Homebrew!", shell_output("\#{bin}/jerry run hello.jer")
+      assert_match "Hello from Homebrew!", shell_output("#{bin}/jerry run hello.jer")
     end
   end
