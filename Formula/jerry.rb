@@ -2,7 +2,7 @@ class Jerry < Formula
     desc "Jerry programming language compiler"
     homepage "https://github.com/jeffscottbrown/jerry-lang"
     url "https://github.com/jeffscottbrown/jerry-lang/archive/refs/tags/v0.7.0.tar.gz"
-    sha256 "PLACEHOLDER"
+    sha256 "740b4bee15f05279aaecbaf7dc7cc6c485c1cf447fc78364424971e5a8c5cf1e"
     license "MIT"
     head "https://github.com/jeffscottbrown/jerry-lang.git", branch: "main"
 
