@@ -1,8 +1,8 @@
 class Jerry < Formula
   desc "Jerry programming language compiler"
   homepage "https://github.com/jeffscottbrown/jerry-lang"
-  url "https://github.com/jeffscottbrown/jerry-lang/archive/refs/tags/v0.8.6.tar.gz"
-  sha256 "57205f6a6d69c4e0cb916fb71fc7d4dbf35b818d473ac6f3fadb7ebac0455544"
+  url "https://github.com/jeffscottbrown/jerry-lang/archive/refs/tags/v0.8.7.tar.gz"
+  sha256 "d58f7a5087fc4f5e6c7c8d18dcc3fa07b8b8567e05c105430cdb093d7a5103aa"
   license "MIT"
   head "https://github.com/jeffscottbrown/jerry-lang.git", branch: "main"
 
@@ -10,15 +10,15 @@ class Jerry < Formula
   # Each release's formula points to the previous release's binaries.
   on_arm do
     resource "jerry-compiler-seed" do
-      url "https://github.com/jeffscottbrown/jerry-lang/releases/download/v0.8.6/jerry-macos-arm64.tar.gz"
-      sha256 "ba760ecb5336cfba054d74c39028a142194f0e622d050d84ff3569a4a25c4ff8"
+      url "https://github.com/jeffscottbrown/jerry-lang/releases/download/v0.8.7/jerry-macos-arm64.tar.gz"
+      sha256 "a71d8af7e5ccdbc0e7e4877d9d74db059efd178212a884aac2826a1f63cc34e0"
     end
   end
 
   on_intel do
     resource "jerry-compiler-seed" do
-      url "https://github.com/jeffscottbrown/jerry-lang/releases/download/v0.8.6/jerry-macos-x86_64.tar.gz"
-      sha256 "e793854594309c9a7d1bdba8b758f61233b132a4ad9667eb94f9d58dac246878"
+      url "https://github.com/jeffscottbrown/jerry-lang/releases/download/v0.8.7/jerry-macos-x86_64.tar.gz"
+      sha256 "c7c7846f9d649a54b09f907d7a178093cb978df23dd8b48c5eaa66edf7c0faeb"
     end
   end
 
